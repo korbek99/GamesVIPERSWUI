@@ -20,8 +20,7 @@ struct HomeView: View {
 
         appearance.stackedLayoutAppearance.normal.iconColor = .white
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white]
-        
-        // 3. Color de los iconos seleccionados (Amarillo)
+ 
         appearance.stackedLayoutAppearance.selected.iconColor = .systemYellow
         appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.systemYellow]
 
@@ -44,7 +43,7 @@ struct HomeView: View {
                 }
                 .tag(1)
             
-            FavoritesView()
+            FavoritesRouter.createModule()
                 .tabItem {
                     Label("Favorites", systemImage: "heart.fill")
                 }
