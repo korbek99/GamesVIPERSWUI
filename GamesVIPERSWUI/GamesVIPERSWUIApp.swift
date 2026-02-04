@@ -13,5 +13,7 @@ struct GamesVIPERSWUIApp: App {
         WindowGroup {
             LaunchView()
         }
+        .modelContainer(for: FavoriteGame.self)
     }
+        
 }

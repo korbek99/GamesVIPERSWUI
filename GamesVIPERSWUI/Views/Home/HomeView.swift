@@ -38,7 +38,7 @@ struct HomeView: View {
                 }
                 .tag(0)
 
-            GamesView()
+            GamesRouter.createModule()
                 .tabItem {
                     Label("Games", systemImage: "gamecontroller.fill")
                 }
